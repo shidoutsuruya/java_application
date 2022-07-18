@@ -1,17 +1,17 @@
 import java.util.NoSuchElementException;
 import java.util.LinkedList;
 import java.util.Queue;
-public class BinarySearchST<Key extends Comparable<Key>,Value>
+public class ST<Key extends Comparable<Key>,Value>
 {
     private static final int INIT_CAPACITY=2;
     private Key[] keys;
     private Value[] vals;
     private int n=0;
-    public BinarySearchST()
+    public ST()
     {
         this(INIT_CAPACITY);
     }
-    public BinarySearchST(int capacity)
+    public ST(int capacity)
     {
         keys=(Key[]) new Comparable[capacity];
         vals=(Value[]) new Object[capacity];
@@ -225,15 +225,16 @@ public class BinarySearchST<Key extends Comparable<Key>,Value>
         }
         return true;
     }
+    /* 
     public static void main(String[] args)
     {
-        BinarySearchST<String,Integer> st=new BinarySearchST<String,Integer>();
+        ST<String,Integer> st=new ST<String,Integer>();
         st.put("hello",5);
         st.put("232",3);
         for(String s:st.keys())
         {
             System.out.println(st.get(s));
         }
-    }
+    }*/
 
 }

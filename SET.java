@@ -123,6 +123,7 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
         String s=set.toString();
         return "{"+s.substring(1,s.length()-1)+"}";
     }
+    /* 
     public static void main(String[] args)
     {
         SET<String> set=new SET<String>();
@@ -141,5 +142,5 @@ public class SET<Key extends Comparable<Key>> implements Iterable<Key> {
              System.out.println(iter.next());
         }
        
-    }
+    }*/
 }
